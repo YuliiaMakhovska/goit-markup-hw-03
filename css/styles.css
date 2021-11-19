@@ -229,7 +229,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-
+.about {
+  padding-bottom: 94px;
+}
 .about-title {
   font-weight: 700;
   font-size: 36px;
@@ -253,7 +255,7 @@ body {
 }
 .team {
   background-color: #f5f4fa;
-  margin-top: 94px;
+  padding-top: 94px;
 }
 .team-title {
   font-weight: 700;
@@ -263,7 +265,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-title-color);
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 .team-list {
   display: flex;
@@ -344,7 +345,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
-
 .footer-link:focus,
 .footer-link:hover {
   color: var(--accent-color);
@@ -362,7 +362,6 @@ body {
 .nav-button:not(:last-child) {
   margin-right: 8px;
 }
-
 .nav-button {
   display: flex;
   border-radius: 4px;
@@ -411,10 +410,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
 }
 .portfolio-item {
   flex-basis: calc((100% - 3 * 30px) / 3);
