@@ -73,7 +73,7 @@ body {
   align-items: center;
 }
 .header-logo {
-  margin-right: 93px;
+  padding-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -91,10 +91,10 @@ body {
   color: var(--accent-color);
 }
 .header-item:not(:last-child) {
-  margin: 50px;
+  padding-right: 50px;
 }
 .header-mail {
-  margin-right: 50px;
+  padding-right: 50px;
 }
 .studio-nav {
   color: var(--second-logo-text-color);
@@ -136,6 +136,11 @@ body {
 .header-tel:focus {
   color: var(--accent-color);
 }
+.hero {
+  background-color: var(--background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -147,13 +152,12 @@ body {
   width: 696px;
   margin-bottom: 30px;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 .hero-back {
   max-width: 1600px;
   background-color: var(--background-color);
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 200px;
   letter-spacing: 0.06em;
 }
 .button:hover,
@@ -174,15 +178,17 @@ body {
   cursor: pointer;
   border-radius: 4px solid var(--accent-color);
   border-color: transparent;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   padding-left: 32px;
   padding-right: 32px;
 }
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .features-container {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 0;
 }
 .visually-hidden {
   position: absolute;
@@ -197,7 +203,12 @@ body {
 .features-list {
   display: flex;
   margin: 0 auto;
-  padding: 30px;
+}
+.features-item {
+  margin-right: 30px;
+}
+.features-item:nth-child(4) {
+  margin-right: 0px;
 }
 .features-title {
   display: flex;
@@ -217,7 +228,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  margin-right: 30px;
 }
 
 .about-title {
@@ -227,12 +237,10 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
-  padding-top: 94px;
+  margin-bottom: 50px;
 }
 .about-list {
   display: flex;
-  padding-top: 50px;
-  padding-bottom: 94px;
 }
 .about-list-item {
   display: block;
@@ -244,7 +252,8 @@ body {
   max-width: 370px;
 }
 .team {
-  background: #f5f4fa;
+  background-color: #f5f4fa;
+  margin-top: 94px;
 }
 .team-title {
   font-weight: 700;
@@ -253,14 +262,20 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  margin-bottom: 50px;
   padding-top: 94px;
-  padding-bottom: 50px;
 }
 .team-list {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
   border-radius: 0px 0px 4px 4px;
+}
+.team-item {
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 94px;
 }
 .title {
   font-weight: 500;
@@ -279,6 +294,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  padding-bottom: 30px;
 }
 .footer {
   background-color: var(--background-color);
@@ -303,6 +319,9 @@ body {
 .footer-logo:hover {
   color: var(--accent-color);
 }
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .address-link {
   display: flex;
   font-style: normal;
@@ -311,7 +330,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
-  margin-bottom: 9px;
 }
 .address-link:hover,
 .address-link:focus {
@@ -325,7 +343,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
-  margin-bottom: 9px;
 }
 
 .footer-link:focus,
@@ -333,7 +350,9 @@ body {
   color: var(--accent-color);
 }
 /* ---------------PAGE PORTFOLIO-------------- */
-
+.portfolio {
+  padding-bottom: 94px;
+}
 .portfolio-nav-list {
   display: flex;
   justify-content: center;
@@ -347,6 +366,8 @@ body {
 .nav-button {
   display: flex;
   border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-style: none;
 }
 .portfolio-nav-btn {
@@ -372,7 +393,6 @@ body {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   box-sizing: border-box;
-  margin-bottom: 30px;
 }
 .portfolio-item-text {
   font-family: inherit;
@@ -395,10 +415,19 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
 }
 .portfolio-item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-left: 30px;
   margin-right: 0;
+  margin-bottom: 30px;
+}
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.portfolio-item-link {
+  display: block;
+}
+.portfolio-item-link:nth-child(3n + 1) {
+  margin-left: 0px;
 }
